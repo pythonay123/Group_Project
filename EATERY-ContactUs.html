@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+	<head>
+    	<!-- Required meta tags -->
+   		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--
+	  @ Author Jonathan Fox
+		Continuous Assessment 3 for Web Design & Client Side Scripting 
+		-->
+    	<title>CONTACT-US</title>
+    	<!-- bootstrap -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- custom CSS file -->
+    	<link rel="stylesheet" href="Default.css">
+	</head>
+
+	<body>
+		<div class="Container"> <!-- main container class-->
+      		<div class="upperContainer" > <!-- container class for each form input  -->
+       			<h1>CONTACT US<h1> 
+        		<div class="linkWrapper">
+          			<!-- TODO add links other pages-->
+          			<a href="https://www.w3schools.com/html/html_links.asp" class="btn btn-default">COLLECTION</a>  
+				</div>
+				<div class="linkWrapper">
+					  <!-- TODO add links other pages-->
+          			<a href="https://www.w3schools.com/html/html_links.asp" class="btn btn-default">DELIVERY</a> 
+        		</div>
+      		</div>
+      		<div class="middleContainer">
+				<div class="formWrap">
+					<form action="/contact" class="row g-3">
+						<div class="col-md-6">
+							<label for="inputFirstName" class="form-label">Firt Name</label>
+						  	<input type="text" class="form-control" id="inputFirstName" placeholder="Your First Name">
+						</div>
+						<div class="col-md-6">
+						  	<label for="inputLastName" class="form-label">Last Name</label>
+						 	<input type="text" class="form-control" id="inputLastName" placeholder="Your Last Name">
+						</div>
+						<div class="col-md-6">
+							<label for="inputEmail" class="form-label">Email Address</label>
+							<input type="email" class="form-control" id="inputEmail" placeholder="You@example.com">
+						</div>
+						<div class="col-md-6">
+						  <label for="inputNumber" class="form-label">Phone Number</label>
+						  <input type="text" class="form-control" id="inputNumber" placeholder="Your Number">
+						</div>
+						<div class="col-md-12">
+							<label for="message" class="form-label">Message</label>
+							<input type="textarea" class="form-control" id="message" placeholder="Enter message here">
+						</div>
+						<div class="col-auto">
+							<button type="submit" class="btn btn-primary" id="Submit">Submit</button>
+						</div>
+					</form>
+				</div>
+				<div class="contactWrap">
+					<p><Strong>Contact</Strong><br>
+					National College of Ireland <br>
+					IFSC <br>
+					DUBLIN 1 <br>
+					</p>
+					<p>
+					Phone: 01 531 3500 <br>
+					Email: info@eatery.ie <br>
+					</p>
+				</div>
+      		</div>
+			<div class="lowerContainer">
+			</div>
+		</div>
+			  <!-- Script loaded at end to ensure page is loaded before triggering script -->
+	
+    	<!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    	<!-- custom javascript -->
+    	<script src="Default.js"></script>  
+	</body>
+</html>
