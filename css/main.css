@@ -11599,6 +11599,12 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
+.nav-menu__button__line-1, .nav-menu__button__line-2, .nav-menu__button__line-3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s; }
+
 .form button, .table-container button {
   font-family: calibri, sans-serif;
   margin-top: 18px;
