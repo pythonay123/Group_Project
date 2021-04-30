@@ -21,7 +21,7 @@
         <div class="bg-light nav-menu__button__line-2"></div>
         <div class="bg-light nav-menu__button__line-3"></div>
       </button>
-      <div class="collapse navbar-collapse nav-menu__coll" id="myNavbar">
+      <div class="collapse navbar-collapse nav-menu__coll" id="myNavbar" style="position: initial;">
         <ul class="navbar-nav items" id="all-items">
           <li class="nav-item items__li">
             <a href="#" class="nav-link mr-5 items__li__menu-item">HOME</a>
@@ -29,7 +29,7 @@
           <li class="nav-item items__li">
             <a href="#" class="nav-link mr-5 items__li__menu-item">MENU</a>
           </li>
-          <li class="nav-item items__li">
+          <li class="nav-item items__li items__li--order"> 
             <a href="#" class="nav-link mr-5 items__li__menu-item">ORDER NOW</a>
           </li>
           <li class="nav-item items__li--contact">
@@ -62,7 +62,7 @@
           <div class="col-12 col-sm-12">
             <h1 class="banner-text__h1">Checkout</h1>
             <button class="banner-text__btn ml-5">collection</button>
-            <button class="banner-text__btn ml-5">delivery</button>
+            <button class="banner-text__btn ml-2 ml-sm-5">delivery</button>
           </div>
         </div>
       </div>
@@ -81,10 +81,10 @@
             <h3 class="login-form__row__col__h3">or register now</h3>
 
             <form action="#" id="form" class="form mt-3">
-              <label for="email">Email address</label>
+              <label for="email" class="login-form__row__col__label">Email address</label>
               <input type="email" id="email" class="py-2 login-form__row__col__input" placeholder="Email Address">
               <small class="error-1">Error message</small>
-              <label for="password">Password</label>
+              <label for="password" class="login-form__row__col__label">Password</label>
               <input type="password" id="password" class="py-2 login-form__row__col__input" placeholder="Password">
               <small class="error-2">Error message</small>
               <div class="login-form__row__col__remember">
@@ -105,20 +105,20 @@
       <div class="row order__row">
 
         <!-- First Column -->
-        <div class="col-12 col-sm-12 col-md-6 order__row__first pr-5">
+        <div class="col-md-12 col-lg-6 order__row__first pr-5">
           <h1 class="order__row__first__h1">Your Order Details</h1>
           <!-- Starter Menu table -->
           <h3 class="order__row__first__h3">Starters</h3>
           <table class="table order__row__first__table">
             <tbody class="tbody">
               <tr>
-                <td><input type="checkbox" class="tbody__input">Mark</td>
+                <td><input type="checkbox" class="tbody__input">Caesar salad</td>
               </tr>
               <tr>
-                <td><input type="checkbox" class="tbody__input">Jacob</td>
+                <td><input type="checkbox" class="tbody__input">Super bowl</td>
               </tr>
               <tr>
-                <td><input type="checkbox" class="tbody__input">Larry</td>
+                <td><input type="checkbox" class="tbody__input">Sriracha</td>
               </tr>
             </tbody>
           </table>
@@ -127,13 +127,13 @@
           <table class="table order__row__first__table">
             <tbody class="tbody">
               <tr>
-                <td><input type="checkbox" class="tbody__input">Mark</td>
+                <td><input type="checkbox" class="tbody__input">Smash burger</td>
               </tr>
               <tr>
-                <td><input type="checkbox" class="tbody__input">Jacob</td>
+                <td><input type="checkbox" class="tbody__input">chicken burger</td>
               </tr>
               <tr>
-                <td><input type="checkbox" class="tbody__input">Larry</td>
+                <td><input type="checkbox" class="tbody__input">cheese steak sambo</td>
               </tr>
             </tbody>
           </table>
@@ -142,20 +142,20 @@
           <table class="table order__row__first__table">
             <tbody class="tbody">
               <tr>
-                <td><input type="checkbox" class="tbody__input">Mark</td>
+                <td><input type="checkbox" class="tbody__input">creamy cheesecake</td>
               </tr>
               <tr>
-                <td><input type="checkbox" class="tbody__input">Jacob</td>
+                <td><input type="checkbox" class="tbody__input">Molten chocolate brownie</td>
               </tr>
               <tr>
-                <td><input type="checkbox" class="tbody__input">Larry</td>
+                <td><input type="checkbox" class="tbody__input">Ice Cream</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <!-- Second column -->
-        <div class="col-12 col-sm-12 col-md-6 order__row__second pl-5">
+        <div class="col-md-12 col-lg-6 order__row__second pl-2 pl-sm-5">
           <table class="table mt-5">
             <thead class="table__head">
               <tr>
@@ -268,9 +268,9 @@
   <!-- end of order details -->
 
   <footer class="footer">
-    <div class="container-fluid">
+    <div class="footer-cont container-fluid">
       <div class="row py-3 footer__row">
-        <div class="col-lg-2 col-md-6 footer__row__col">
+        <div class="col-xl-2 col-lg-4 col-md-12 footer__row__col">
           <h1 class="footer__row__col__h1">Eatery</h1>
           <h5 class="footer__row__col__h5">sitemap</h5>
           <div class="footer__row__col__p">
@@ -280,15 +280,15 @@
             <p>Contact</p>
           </div>
         </div>
-        <div class="footer__row__col--second col-lg-2 col-md-6">
+        <div class="col-xl-2 col-lg-4 col-md-12 footer__row__col--second follow">
           <h5 class="footer__row__col__h5--mod">Follow us</h5>
           <div class="footer__row__col__p--second">
             <div class="item"><i class="fab fa-facebook-f"></i><p>Facebook</p></div>
             <div class="item"><i class="fab fa-twitter"></i><p>Twitter</p></div>
             <div class="item"><i class="fab fa-instagram"></i><p>Instagram</p></div>
-          </div>
         </div>
-        <div class="col-lg-2 col-md-6 footer__row__col--second">
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 contact footer__row__col--second">
           <h5 class="footer__row__col__h5--mod">Contact</h5>
           <div class="footer__row__col__p">
             <p>IFSC, Dublin, Ireland</p>
@@ -296,28 +296,31 @@
             <p>info@dublineatery.com</p>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 footer__row__card">
-          <h1 class="footer__row__card__h1">Subscribe to our newsletter</h1>
-          <h5 class="footer__row__card__h5">Sign up for the latest news, events and special offers.</h5>
-          <div class="footer__row__card--contact">
-            <div class="footer__row__card__contact-1">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" class="footer__row__card__contact__email" placeholder="you@example.com">
+        <div class="col-xl-6">
+          <div class="f-card footer__row__card">
+            <h1 class="footer__row__card__h1">Subscribe to our newsletter</h1>
+            <h5 class="footer__row__card__h5">Sign up for the latest news, events and special offers.</h5>
+            <div class="footer__row__card--contact mt-xl-4">
+              <div class="footer__row__card__contact-1">
+                <label for="email-2">Email Address</label>
+                <input type="email" id="email-2" class="footer__row__card__contact__email" placeholder="you@example.com">
+              </div>
+              <div class="footer__row__card__contact-2">
+                <label for="name">Full Name</label>
+                <input type="name" id="name" class="footer__row__card__contact__name" placeholder="Full Name">
+              </div>
+              <button>Subscribe</button>
             </div>
-            <div class="footer__row__card__contact-2">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" class="footer__row__card__contact__email" placeholder="you@example.com">
-            </div>
-            <button>Subscribe</button>
           </div>
+        </div>
+      </div>
+      <div class="row footer__row-2">
+        <div class="row2_col col-12">
         </div>
       </div>
     </div>
   </footer>
   
-  
-  
-
   <script src="js/scripts.min.js" charset="utf-8"></script>
 </body>
 </html>

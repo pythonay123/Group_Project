@@ -11610,13 +11610,15 @@ readers do not read off random characters that represent icons */
 
 .footer__row__card button {
   font-family: calibri, sans-serif;
-  margin-top: 18px;
+  margin-top: 31px;
   color: #FFFFFF;
   background-color: #00473E;
-  padding: 5px 13px;
+  padding: 0px 20px;
+  height: 2.5rem;
   border-color: #00473E;
   border-radius: 5px;
-  font-size: 19px; }
+  font-size: 22px;
+  margin-left: 0.5rem; }
 
 .order__row__first__h3, .order__row__first__h3--red {
   text-transform: uppercase;
@@ -11642,7 +11644,8 @@ body {
 .nav-menu {
   background-color: #00473E;
   height: 4.5rem;
-  padding-left: 17rem; }
+  padding-left: 17rem;
+  z-index: 3; }
   @media only screen and (min-width: 992px) {
     .nav-menu {
       padding-right: 17rem; } }
@@ -11652,8 +11655,37 @@ body {
     font-style: normal;
     font-size: 40px;
     color: #FFFFFF; }
+    @media only screen and (max-width: 1640px) {
+      .nav-menu__a span {
+        margin-left: -5rem;
+        font-size: 35px; } }
+    @media only screen and (max-width: 1537px) {
+      .nav-menu__a span {
+        margin-left: -8rem;
+        font-size: 30px; } }
+    @media only screen and (max-width: 1250px) {
+      .nav-menu__a span {
+        margin-left: -11rem;
+        font-size: 28px; } }
   .nav-menu__coll {
     margin-left: 18rem; }
+    @media only screen and (max-width: 1814px) {
+      .nav-menu__coll {
+        margin-left: 16rem; } }
+    @media only screen and (max-width: 1720px) {
+      .nav-menu__coll {
+        margin-left: 13rem; } }
+    @media only screen and (max-width: 1537px) {
+      .nav-menu__coll {
+        margin-left: 9rem; } }
+    @media only screen and (max-width: 1250px) {
+      .nav-menu__coll {
+        margin-left: 2rem; } }
+    @media only screen and (max-width: 992px) {
+      .nav-menu__coll #all-items {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)) no-repeat center center/cover;
+        width: 100%;
+        z-index: 10; } }
 
 .items__li__menu-item {
   font-family: basic-sans, sans-serif;
@@ -11661,9 +11693,25 @@ body {
   font-style: normal;
   font-size: 20px;
   color: #FFFFFF; }
+  @media only screen and (max-width: 1814px) {
+    .items__li__menu-item {
+      font-size: 16px; } }
+  @media only screen and (max-width: 1720px) {
+    .items__li__menu-item {
+      font-size: 14px; } }
+
+@media only screen and (max-width: 1537px) {
+  .items__li--order {
+    width: 9rem; } }
 
 .items__li--contact {
   margin-right: 5.7rem; }
+  @media only screen and (max-width: 1537px) {
+    .items__li--contact {
+      margin-right: 4.5rem; } }
+  @media only screen and (max-width: 1250px) {
+    .items__li--contact {
+      margin-right: 2.5rem; } }
 
 .items__li__icons {
   display: flex;
@@ -11672,6 +11720,15 @@ body {
   list-style: none; }
   .items__li__icons__li__a {
     color: #FFFFFF; }
+    @media only screen and (max-width: 1814px) {
+      .items__li__icons__li__a {
+        font-size: 16px; } }
+    @media only screen and (max-width: 1720px) {
+      .items__li__icons__li__a {
+        font-size: 14px; } }
+    @media only screen and (max-width: 1250px) {
+      .items__li__icons__li__a {
+        font-size: 12px; } }
 
 header {
   height: 45rem;
@@ -11689,6 +11746,15 @@ header {
     font-size: 150px;
     text-transform: uppercase;
     color: #FFFFFF; }
+    @media only screen and (max-width: 992px) {
+      .banner-text__h1 {
+        font-size: 100px; } }
+    @media only screen and (max-width: 620px) {
+      .banner-text__h1 {
+        font-size: 80px; } }
+    @media only screen and (max-width: 500px) {
+      .banner-text__h1 {
+        font-size: 50px; } }
   .banner-text__btn {
     text-transform: uppercase;
     font-family: basic-sans, sans-serif;
@@ -11700,6 +11766,18 @@ header {
     color: #00473E;
     border: 2px solid #FFFFFF;
     border-radius: 10px; }
+    @media only screen and (max-width: 992px) {
+      .banner-text__btn {
+        font-size: 20px;
+        padding: 0.5rem 3rem; } }
+    @media only screen and (max-width: 620px) {
+      .banner-text__btn {
+        font-size: 17px;
+        padding: 0.5rem 1.3rem; } }
+    @media only screen and (max-width: 500px) {
+      .banner-text__btn {
+        font-size: 13px;
+        padding: 0.5rem 0.6rem; } }
 
 .login-form {
   position: absolute;
@@ -11713,6 +11791,9 @@ header {
     font-style: normal;
     font-size: 30px;
     color: #475D5B; }
+    @media only screen and (max-width: 500px) {
+      .login-form__row__col__h1 {
+        font-size: 23px; } }
   .login-form__row__col__h3 {
     text-transform: uppercase;
     font-family: calibri, sans-serif;
@@ -11720,6 +11801,9 @@ header {
     font-style: normal;
     font-size: 20px;
     color: #475D5B; }
+    @media only screen and (max-width: 500px) {
+      .login-form__row__col__h3 {
+        font-size: 14px; } }
   .login-form__row__col__input {
     width: 18rem;
     padding-left: 10px;
@@ -11727,10 +11811,16 @@ header {
     font-family: calibri, sans-serif;
     font-size: 18px;
     border-radius: 8px; }
+    @media only screen and (max-width: 500px) {
+      .login-form__row__col__input {
+        font-size: 12px; } }
   .login-form__row__col__remember {
     font-family: calibri, sans-serif;
     font-size: 18px;
     margin-top: 10px; }
+    @media only screen and (max-width: 500px) {
+      .login-form__row__col__remember {
+        font-size: 17px; } }
 
 /* make the actual error message red */
 .form {
@@ -11748,12 +11838,18 @@ header {
     font-style: normal;
     font-size: 19px;
     margin-top: 17px; }
+    @media only screen and (max-width: 500px) {
+      .form label {
+        font-size: 17px; } }
   .form small {
     color: var(--error);
     position: absolute;
     bottom: 0;
     left: 0;
     visibility: hidden; }
+  @media only screen and (max-width: 520px) {
+    .form button {
+      font-size: 12px; } }
 
 .order {
   margin-top: 36rem; }
@@ -11762,17 +11858,36 @@ header {
     padding: 2.5rem 5rem;
     border: 1px solid black;
     border-radius: 3.5rem; }
+    @media only screen and (max-width: 1200px) {
+      .order__row {
+        padding: 2.5rem 2rem; } }
+    @media only screen and (max-width: 992px) {
+      .order__row {
+        padding-bottom: 17rem;
+        margin-bottom: 7rem; } }
+    @media only screen and (max-width: 520px) {
+      .order__row {
+        padding-left: 0.4rem; } }
     .order__row__first__h1 {
       text-transform: uppercase;
       font-family: continuo, sans-serif;
       font-weight: 400;
       font-style: normal; }
+      @media only screen and (max-width: 1200px) {
+        .order__row__first__h1 {
+          font-size: 28px; } }
     .order__row__first__h3 {
       margin-top: 6rem;
       color: #475D5B; }
+      @media only screen and (max-width: 1200px) {
+        .order__row__first__h3 {
+          font-size: 20px; } }
       .order__row__first__h3--red {
         margin-top: 1.8rem;
         color: #475D5B; }
+        @media only screen and (max-width: 1200px) {
+          .order__row__first__h3--red {
+            font-size: 20px; } }
     .order__row__first__table {
       margin-top: 1.8rem;
       border: 1px solid rgba(71, 93, 91, 0.2); }
@@ -11842,19 +11957,46 @@ header {
 
 .table-container {
   position: relative; }
+  @media only screen and (max-width: 520px) {
+    .table-container button {
+      font-size: 10px;
+      width: 130%; } }
+  @media only screen and (max-width: 420px) {
+    .table-container button {
+      width: 150%; } }
 
 .subtotal {
   position: absolute;
   left: 39%;
   width: 260px; }
+  @media only screen and (max-width: 520px) {
+    .subtotal {
+      left: 34%;
+      width: 200px; } }
+  @media only screen and (max-width: 420px) {
+    .subtotal {
+      left: 30%;
+      width: 170px; } }
   .subtotal__td {
     font-family: calibri, sans-serif;
     font-weight: 500;
     font-size: 19px; }
+    @media only screen and (max-width: 992px) {
+      .subtotal__td {
+        font-size: 14px; } }
+    @media only screen and (max-width: 500px) {
+      .subtotal__td {
+        font-size: 12px; } }
     .subtotal__td__th {
       font-family: calibri, sans-serif;
       font-weight: 600;
       font-size: 20px; }
+    @media only screen and (max-width: 992px) {
+      .subtotal__td {
+        font-size: 16px; } }
+    @media only screen and (max-width: 500px) {
+      .subtotal__td {
+        font-size: 14px; } }
 
 .footer {
   margin-top: 7rem;
@@ -11865,6 +12007,21 @@ header {
   .footer__row {
     padding-left: 22.5rem;
     padding-right: 22.5rem; }
+    @media only screen and (max-width: 1500px) {
+      .footer__row {
+        padding-left: 15rem; } }
+    @media only screen and (max-width: 1100px) {
+      .footer__row {
+        padding-right: 6rem;
+        padding-left: 6rem; } }
+    @media only screen and (max-width: 500px) {
+      .footer__row {
+        padding-right: 3rem;
+        padding-left: 3rem; } }
+    @media only screen and (max-width: 400px) {
+      .footer__row {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem; } }
     .footer__row__col__h1 {
       text-transform: uppercase;
       font-family: continuo, sans-serif; }
@@ -11873,21 +12030,226 @@ header {
     .footer__row__col__p p {
       padding-bottom: 0;
       margin-bottom: 0; }
+      @media only screen and (max-width: 1700px) {
+        .footer__row__col__p p {
+          font-size: 15px; } }
     .footer__row__col__p--second .item {
       display: flex; }
       .footer__row__col__p--second .item p {
         margin-left: 10px;
         padding-bottom: 0;
         margin-bottom: 0; }
+        @media only screen and (max-width: 1700px) {
+          .footer__row__col__p--second .item p {
+            font-size: 15px; } }
     .footer__row__card {
       border: 1px solid #475D5B;
       background-color: #FFFFFF;
-      padding-top: 2.5rem;
-      padding-bottom: 4rem; }
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+      padding-left: 2rem;
+      border-radius: 10px;
+      position: relative;
+      width: 110%; }
+      @media only screen and (max-width: 1856px) {
+        .footer__row__card {
+          font-size: 14px; } }
+      @media only screen and (max-width: 1700px) {
+        .footer__row__card {
+          margin-top: 2rem;
+          padding-bottom: 7rem;
+          margin-left: 1rem; } }
+      @media only screen and (max-width: 1674px) {
+        .footer__row__card {
+          padding-bottom: 7rem; } }
+      @media only screen and (max-width: 1064px) {
+        .footer__row__card {
+          padding-bottom: 9rem; } }
+      @media only screen and (max-width: 992px) {
+        .footer__row__card {
+          width: 100% !important;
+          padding-bottom: 9rem; } }
+      @media only screen and (max-width: 980px) {
+        .footer__row__card {
+          padding-bottom: 15rem; } }
+      @media only screen and (max-width: 900px) {
+        .footer__row__card {
+          width: 100% !important; } }
+      @media only screen and (max-width: 800px) {
+        .footer__row__card {
+          width: 100% !important; } }
+      @media only screen and (max-width: 500px) {
+        .footer__row__card {
+          padding-left: 3px !important;
+          padding-right: 3px !important; } }
       .footer__row__card__h1 {
         text-transform: uppercase;
         font-family: continuo, sans-serif;
-        font-size: 36px; }
+        font-size: 36px;
+        margin-bottom: 0px; }
+        @media only screen and (max-width: 1856px) {
+          .footer__row__card__h1 {
+            font-size: 30px; } }
+        @media only screen and (max-width: 1100px) {
+          .footer__row__card__h1 {
+            font-size: 24px; } }
+        @media only screen and (max-width: 800px) {
+          .footer__row__card__h1 {
+            font-size: 16px; } }
       .footer__row__card__h5 {
         font-family: calibri, sans-serif;
-        font-weight: 700; }
+        font-weight: 700;
+        font-size: 22px; }
+        @media only screen and (max-width: 1856px) {
+          .footer__row__card__h5 {
+            font-size: 15px; } }
+        @media only screen and (max-width: 1100px) {
+          .footer__row__card__h5 {
+            font-size: 12px; } }
+        @media only screen and (max-width: 800px) {
+          .footer__row__card__h5 {
+            font-size: 9px;
+            margin-top: 5px; } }
+      .footer__row__card--contact {
+        display: flex;
+        justify-content: center;
+        padding-right: 4rem; }
+        @media only screen and (max-width: 1200px) {
+          .footer__row__card--contact {
+            margin-bottom: 1rem; } }
+        @media only screen and (max-width: 1100px) {
+          .footer__row__card--contact {
+            margin-bottom: 5rem; } }
+        @media only screen and (max-width: 1063px) {
+          .footer__row__card--contact {
+            margin-bottom: 3rem; } }
+      .footer__row__card__contact__email {
+        border: 1px solid #475D5B;
+        border-radius: 7px;
+        font-family: calibri, sans-serif;
+        height: 2.5rem;
+        width: 10.5rem;
+        outline-style: none; }
+        @media only screen and (max-width: 1856px) {
+          .footer__row__card__contact__email {
+            width: 9rem;
+            height: 1.8rem; } }
+        @media only screen and (max-width: 1700px) {
+          .footer__row__card__contact__email {
+            position: absolute;
+            top: 9.8rem !important;
+            margin-left: 2rem;
+            left: 5rem; } }
+        @media only screen and (max-width: 1100px) {
+          .footer__row__card__contact__email {
+            width: 34vw; } }
+        @media only screen and (max-width: 980px) {
+          .footer__row__card__contact__email {
+            position: absolute;
+            top: 12rem !important;
+            left: -12px; } }
+        @media only screen and (max-width: 750px) {
+          .footer__row__card__contact__email {
+            font-size: 9px; } }
+      .footer__row__card__contact__name {
+        border: 1px solid #475D5B;
+        border-radius: 7px;
+        font-family: calibri, sans-serif;
+        height: 2.5rem;
+        width: 10.5rem;
+        outline-style: none; }
+        @media only screen and (max-width: 1856px) {
+          .footer__row__card__contact__name {
+            width: 9rem;
+            height: 1.8rem; } }
+        @media only screen and (max-width: 1700px) {
+          .footer__row__card__contact__name {
+            position: absolute;
+            left: 4rem; } }
+        @media only screen and (max-width: 1100px) {
+          .footer__row__card__contact__name {
+            width: 34vw; } }
+        @media only screen and (max-width: 980px) {
+          .footer__row__card__contact__name {
+            position: absolute;
+            top: 4.5rem;
+            left: -30px; } }
+        @media only screen and (max-width: 750px) {
+          .footer__row__card__contact__name {
+            font-size: 9px; } }
+      .footer__row__card__contact-1 {
+        font-family: calibri, sans-serif; }
+        @media only screen and (max-width: 1700px) {
+          .footer__row__card__contact-1 label {
+            position: absolute;
+            top: 10rem;
+            left: 1rem; } }
+        @media only screen and (max-width: 750px) {
+          .footer__row__card__contact-1 label {
+            font-size: 9px; } }
+      .footer__row__card__contact-2 {
+        font-family: calibri, sans-serif; }
+        @media only screen and (max-width: 1700px) {
+          .footer__row__card__contact-2 {
+            position: absolute;
+            top: 12rem;
+            left: 3rem; } }
+        @media only screen and (max-width: 1700px) {
+          .footer__row__card__contact-2 label {
+            position: absolute;
+            left: -2rem;
+            width: 7rem; } }
+        @media only screen and (max-width: 980px) {
+          .footer__row__card__contact-2 label {
+            position: absolute;
+            top: 2.5rem;
+            left: -30px; } }
+        @media only screen and (max-width: 750px) {
+          .footer__row__card__contact-2 label {
+            font-size: 9px; } }
+      @media only screen and (max-width: 1856px) {
+        .footer__row__card button {
+          font-size: 15px;
+          padding: 0px 8px;
+          height: 1.8rem; } }
+      @media only screen and (max-width: 1700px) {
+        .footer__row__card button {
+          position: absolute;
+          top: 10rem;
+          left: 17rem; } }
+      @media only screen and (max-width: 1100px) {
+        .footer__row__card button {
+          position: absolute;
+          top: 13rem;
+          left: 8rem; } }
+      @media only screen and (max-width: 980px) {
+        .footer__row__card button {
+          position: absolute;
+          top: 18rem;
+          left: 15px; } }
+      @media only screen and (max-width: 750px) {
+        .footer__row__card button {
+          font-size: 11px; } }
+  @media only screen and (max-width: 1700px) {
+    .footer__row-2 {
+      padding-left: 22.5rem;
+      padding-right: 22.5rem; } }
+  @media only screen and (max-width: 1700px) and (max-width: 1500px) {
+    .footer__row-2 {
+      padding-left: 15rem; } }
+  @media only screen and (max-width: 1700px) and (max-width: 1100px) {
+    .footer__row-2 {
+      padding-right: 6rem;
+      padding-left: 6rem; } }
+  @media only screen and (max-width: 1700px) and (max-width: 500px) {
+    .footer__row-2 {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
+  @media only screen and (max-width: 1700px) and (max-width: 400px) {
+    .footer__row-2 {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem; } }
+
+@media only screen and (min-width: 1350px) {
+  .row2_col {
+    display: none; } }
