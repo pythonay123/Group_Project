@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Yrsa:wght@400;700&display=swap');
+
+/* header */
+
+.section_menu_h3 {
+    font-size: 20px;
+    color: #00473E;
+}
+
+/* body */
+
+
+
+.section_menu_h4 {
+    font-size: 14px;
+    color: #00473E;
+    font-family: 'Yrsa', serif;
+    font-weight: 700;
+}
+
+.section_menu_h5 {
+    font-size: 14px;
+    color: #00473E;
+    font-family: 'Yrsa', serif;
+    font-weight: 400;
+    border: 1px solid orange;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Yrsa', serif;
+    border: 1px solid red;
+}
+
+/* .container {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid blue;
+    width: 40em;
+    background-color: white;
+} */
+
+.container-fluid banner{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* overflow: hidden; */
+    /* position: relative; */
+    margin: 0;
+    border: 1px solid red;
+    height: 45rem;
+}
+
+/* .wrap{
+    align-items: center;
+    border: 1px solid red;
+} */
+
+.header_text_wrapper_menu {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate (-30%, -30%);
+    border: 1px solid green;
+    /* z-index: ; */
+}
+
+
+
+
+.footer {
+    margin-top: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #FFA8BA;
+    color: #475D5B; 
+    border: 1px solid red;
+}
+
+.footer__row {
+      padding-left: 22.5rem;
+      padding-right: 22.5rem; 
+    }
+
+.footer__row__col__h1 {
+
+        text-transform: uppercase;
+        font-family: continuo, sans-serif; 
+    }
+      
+
+ .footer__row__col--second { 
+     padding-top: 3.5rem; 
+    }
+
+ .footer__row__col__p p {
+        padding-bottom: 0;
+        margin-bottom: 0; 
+    }
+
+.footer__row__col__p--second .item {
+    display: flex; 
+}
+
+.footer__row__col__p--second .item p {
+          margin-left: 10px;
+          padding-bottom: 0;
+          margin-bottom: 0; 
+        }
+    
+.footer__row__card {
+        border: 1px solid #475D5B;
+        background-color: #FFFFFF;
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
+        border: 1px solid red;
+    }
+        
+.footer__row__card__h1 {
+          text-transform: uppercase;
+          font-family: continuo, sans-serif;
+          font-size: 36px; 
+        }
+    
+.footer__row__card__h5 {
+          font-family: calibri, sans-serif;
+          font-weight: 700; 
+        }

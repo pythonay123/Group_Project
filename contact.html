@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/vfh4whz.css">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/mycss.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top nav-menu">
+      <a href="#" class="navbar-brand nav-menu__a"><span>EATERY</span></a>
+      <button class="navbar-toggler nav-button nav-menu__btn" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <div class="bg-light nav-menu__button__line-1"></div>
+        <div class="bg-light nav-menu__button__line-2"></div>
+        <div class="bg-light nav-menu__button__line-3"></div>
+      </button>
+      <div class="collapse navbar-collapse nav-menu__coll" id="myNavbar">
+        <ul class="navbar-nav items" id="all-items">
+          <li class="nav-item items__li">
+            <a href="#" class="nav-link mr-5 items__li__menu-item">HOME</a>
+          </li>
+          <li class="nav-item items__li">
+            <a href="EATERY-Menus.html" class="nav-link mr-5 items__li__menu-item">MENU</a>
+          </li>
+          <li class="nav-item items__li items__li--order"> 
+            <a href="check-out.html" class="nav-link mr-5 items__li__menu-item">ORDER NOW</a>
+          </li>
+          <li class="nav-item items__li--contact">
+            <a href="contact.html" class="nav-link items__li__menu-item">CONTACT</a>
+          </li>
+          <li class="nav-item items_li--icons">
+            <ul class="items__li__icons">
+              <li class="items__li__icons__li">
+                <a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fas fa-user"></i></a>
+              </li>
+              <li class="nav-item items__li">
+                <a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item items__li">
+                <a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item items__li">
+                <a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- banner -->
+    <div class="banner-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12">
+            <h1 class="banner-text__h1">Checkout</h1>
+            <button class="banner-text__btn ml-5">collection</button>
+            <button class="banner-text__btn ml-2 ml-sm-5">delivery</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of banner -->
+  </header>
+  <!-- end of header -->
+  <section class="contact-form">
+    <div class="container-fluid">
+      <div class="row contact-form__row">
+        <div class="col-xl-6 col-12 contact-form__row__col">
+          <!-- main form -->
+          <div class="form contact-form__row__col__fm">
+
+            <h4 class="form_h4">Drop us a message for any general enquiries, feedback or even just to let us know you're thinking of us.</h4>
+            <div class="form_cont-1">
+              <label for="first_name" id="item_first">First Name</label>
+              <input type="text" id="first_name" placeholder="Your First Name">
+              <label for="last_name" id="item_last">Last Name</label>
+              <input type="text" id="last_name" placeholder="Your Last Name">
+            </div>
+            <div class="form_cont-2">
+              <label for="first_name" id="item_email">Email address</label>
+              <input type="email" id="email" placeholder="you@example.com">
+              <label for="last_name" id="item_phone">Phone Number</label>
+              <input type="text" id="phone" placeholder="Your number">
+            </div>
+
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" id="message"></textarea>
+            <button>Submit</button>
+          </div>
+
+
+          
+
+        </div>
+        <div class="col-xl-6 col-12">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-cont container-fluid">
+      <div class="row py-3 footer__row">
+        <div class="col-xl-2 col-lg-4 col-md-12 footer__row__col">
+          <h1 class="footer__row__col__h1">Eatery</h1>
+          <h5 class="footer__row__col__h5">sitemap</h5>
+          <div class="footer__row__col__p">
+            <p>Home</p>
+            <p>Menu</p>
+            <p>Order Now</p>
+            <p>Contact</p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 footer__row__col--second follow">
+          <h5 class="footer__row__col__h5--mod">Follow us</h5>
+          <div class="footer__row__col__p--second">
+            <div class="item"><i class="fab fa-facebook-f"></i><p>Facebook</p></div>
+            <div class="item"><i class="fab fa-twitter"></i><p>Twitter</p></div>
+            <div class="item"><i class="fab fa-instagram"></i><p>Instagram</p></div>
+        </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 contact footer__row__col--second">
+          <h5 class="footer__row__col__h5--mod">Contact</h5>
+          <div class="footer__row__col__p">
+            <p>IFSC, Dublin, Ireland</p>
+            <p>+353 165 678 903</p>
+            <p>info@dublineatery.com</p>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="f-card footer__row__card">
+            <h1 class="footer__row__card__h1">Subscribe to our newsletter</h1>
+            <h5 class="footer__row__card__h5">Sign up for the latest news, events and special offers.</h5>
+            <div class="footer__row__card--contact mt-xl-4">
+              <div class="footer__row__card__contact-1">
+                <label for="email-2">Email Address</label>
+                <input type="email" id="email-2" class="footer__row__card__contact__email" placeholder="you@example.com">
+              </div>
+              <div class="footer__row__card__contact-2">
+                <label for="name">Full Name</label>
+                <input type="name" id="name" class="footer__row__card__contact__name" placeholder="Full Name">
+              </div>
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footer__row-2">
+        <div class="row2_col col-12">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="js/scripts.min.js" charset="utf-8"></script> -->
+</body>
+</html>
