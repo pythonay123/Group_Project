@@ -535,7 +535,7 @@ template {
   .col-sm-7 {
     flex: 0 0 58.33333%;
     max-width: 58.33333%; }
-  .col-sm-8 {
+ .col-sm-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%; }
   .col-sm-9 {
@@ -11649,12 +11649,18 @@ body {
 
 .nav-menu {
   background-color: #00473E;
-  height: 4.5rem;
+
+
+
+
+
+
   padding-left: 17rem;
   z-index: 3; }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (max-width: 362px) {
+
     .nav-menu {
-      padding-right: 17rem; } }
+      padding-left: 14rem; } }
   .nav-menu__a span {
     font-family: continuo, sans-serif;
     font-weight: 400;
@@ -11673,6 +11679,16 @@ body {
       .nav-menu__a span {
         margin-left: -11rem;
         font-size: 28px; } }
+
+
+    @media only screen and (max-width: 362px) {
+      .nav-menu__a span {
+        margin-left: -8;
+        font-size: 25px; } }
+  @media only screen and (max-width: 362px) {
+    .nav-menu__btn {
+      margin-top: 0px; } }
+
   .nav-menu__coll {
     margin-left: 18rem; }
     @media only screen and (max-width: 1814px) {
@@ -11689,9 +11705,16 @@ body {
         margin-left: 2rem; } }
     @media only screen and (max-width: 992px) {
       .nav-menu__coll #all-items {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)) no-repeat center center/cover;
-        width: 100%;
-        z-index: 10; } }
+
+        
+
+        
+        
+        
+
+        position: relative;
+        right: 13rem; } }
+
 
 .items__li__menu-item {
   font-family: basic-sans, sans-serif;
@@ -11705,6 +11728,12 @@ body {
   @media only screen and (max-width: 1720px) {
     .items__li__menu-item {
       font-size: 14px; } }
+
+
+  @media only screen and (max-width: 992px) {
+    .items__li__menu-item {
+      font-size: 12px; } }
+
 
 @media only screen and (max-width: 1537px) {
   .items__li--order {
@@ -11735,6 +11764,12 @@ body {
     @media only screen and (max-width: 1250px) {
       .items__li__icons__li__a {
         font-size: 12px; } }
+
+
+  @media only screen and (max-width: 992px) {
+    .items__li__icons {
+      display: none; } }
+
 
 header {
   height: 45rem;
@@ -11817,6 +11852,13 @@ header {
     font-family: calibri, sans-serif;
     font-size: 18px;
     border-radius: 8px; }
+
+
+    .login-form__row__col__input.success {
+      border-color: green; }
+    .login-form__row__col__input.error {
+      border-color: red; }
+
     @media only screen and (max-width: 500px) {
       .login-form__row__col__input {
         font-size: 12px; } }
@@ -11828,7 +11870,6 @@ header {
       .login-form__row__col__remember {
         font-size: 17px; } }
 
-/* make the actual error message red */
 .form {
   display: flex;
   flex-direction: column;
@@ -11837,7 +11878,8 @@ header {
   border: 1px solid rgba(71, 93, 91, 0.2);
   border-radius: 10px;
   background-color: #FFFFFF;
-  padding: 10px 20px 30px; }
+  padding: 10px 20px 30px;
+  /* make the actual error message red */ }
   .form label {
     font-family: calibri, sans-serif;
     font-weight: 500;
@@ -11848,11 +11890,28 @@ header {
       .form label {
         font-size: 17px; } }
   .form small {
-    color: var(--error);
+    color: #FF0000;
     position: absolute;
     bottom: 0;
     left: 0;
     visibility: hidden; }
+
+
+  .form .error-1 {
+    position: absolute;
+    top: 46.5%;
+    left: 10%; }
+    @media only screen and (max-width: 500px) {
+      .form .error-1 {
+        top: 45%; } }
+  .form .error-2 {
+    position: absolute;
+    top: 69.8%;
+    left: 10%; }
+    @media only screen and (max-width: 500px) {
+      .form .error-2 {
+        top: 68%; } }
+
   @media only screen and (max-width: 520px) {
     .form button {
       font-size: 12px; } }
