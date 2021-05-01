@@ -1,89 +1,220 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Yrsa:wght@400;700&display=swap');
 
-
-
-body {background-color: aliceblue;
+/* header */
+.header_menu {
+    background: no-repeat center center/cover url("images/jean-claude-attipoe-QD9A1O2reYY-unsplash.jpg") ; 
+    position: relative;
+    /* z-index: 1; */
 }
 
-.btn {
+
+.header_contact {
+    background: no-repeat center center/cover url("edward-howell-R8HoXig87p8-unsplash.jpg"); 
+    position: relative;
+}
+
+
+/* navbar */
+.nav-menu {
+    background-color: #00473E;
+    height: 4.5rem;
+    padding-left: 17rem;
+    border: 1px solid red;
+}
     
+@media only screen and (min-width: 992px) {
+      .nav-menu { padding-right: 17rem; } 
+}
+   
+
+.nav-menu__a span {
+      font-family: continuo, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      color: #FFFFFF; 
+    }
+.nav-menu__coll {
+      margin-left: 18rem;
+    }
+  
+.items__li__menu-item {
+    font-family: basic-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+  
+.items__li--contact {
+    margin-right: 5.7rem; 
+}
+  
+.items__li__icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    list-style: none; 
+}
+
+.items__li__icons__li__a {
+      color: #FFFFFF; 
+}
+  
+
+
+/* banner */
+
+
+
+#collection, #delivery {
     background-color: #faae2b;
-    border: 1px solid white;
+    border: 2px solid white;
+    border-radius: 10px;
     color: #00473E;
     font-size: 30px;
+    font-family: basic-sans, sans-serif;
+    font-weight: 500;
+    padding: 0.7rem 4.5rem;
+
 }
 
-.wrap {height: auto}
 
-div {height: auto}
-
-body h1 {
+.banner_text_menu_h1 {
     display: block;
-    font-size: 40px;
-    color: #00473E;
-
+    font-size: 150px;
+    color: white;
+    border: 1px solid yellow;
+    text-align: center;
 }
 
-body h2 {
+.title_text_menu {
     font-size: 30px;
     color: #00473E;
 }
 
-body h3 {
+.section_menu_h3 {
     font-size: 20px;
     color: #00473E;
 }
 
-body h4 {
+/* body */
+
+
+
+.section_menu_h4 {
     font-size: 14px;
     color: #00473E;
     font-family: 'Yrsa', serif;
     font-weight: 700;
 }
 
-body h5 {
+.section_menu_h5 {
     font-size: 14px;
     color: #00473E;
     font-family: 'Yrsa', serif;
     font-weight: 400;
-
+    border: 1px solid orange;
 }
 
-.container{
+body {
+    background-color: aliceblue;
+    font-family: 'Yrsa', serif;
+    border: 1px solid red;
+}
+
+.container {
     display: flex;
     flex-flow: row wrap;
-    
-
+    border: 1px solid blue;
+    width: 40em;
+    background-color: white;
 }
 
-.container-fluid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
+.container-fluid banner{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* overflow: hidden; */
+    /* position: relative; */
     margin: 0;
+    border: 1px solid red;
+    height: 45rem;
 }
 
-.container-fluid img {
-    flex-shrink: 0;
-    width: 100%;
+/* .wrap{
+    align-items: center;
+    border: 1px solid red;
+} */
 
-}
-
-.wrap{
-    
-    /* justify-content: center;
-    align-items: center; */
-    position: relative;
-    height: auto;
-}
-
-.headertext {
+.header_text_wrapper_menu {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate (-50%, -20%);
-
+    top: 30%;
+    left: 30%;
+    transform: translate (-30%, -30%);
+    border: 1px solid green;
+    /* z-index: ; */
 }
+
+
+
+
+.footer {
+    margin-top: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #FFA8BA;
+    color: #475D5B; 
+    border: 1px solid red;
+}
+
+.footer__row {
+      padding-left: 22.5rem;
+      padding-right: 22.5rem; 
+    }
+
+.footer__row__col__h1 {
+
+        text-transform: uppercase;
+        font-family: continuo, sans-serif; 
+    }
+      
+
+ .footer__row__col--second { 
+     padding-top: 3.5rem; 
+    }
+
+ .footer__row__col__p p {
+        padding-bottom: 0;
+        margin-bottom: 0; 
+    }
+
+.footer__row__col__p--second .item {
+    display: flex; 
+}
+
+.footer__row__col__p--second .item p {
+          margin-left: 10px;
+          padding-bottom: 0;
+          margin-bottom: 0; 
+        }
+    
+.footer__row__card {
+        border: 1px solid #475D5B;
+        background-color: #FFFFFF;
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
+        border: 1px solid red;
+    }
+        
+.footer__row__card__h1 {
+          text-transform: uppercase;
+          font-family: continuo, sans-serif;
+          font-size: 36px; 
+        }
+    
+.footer__row__card__h5 {
+          font-family: calibri, sans-serif;
+          font-weight: 700; 
+        }

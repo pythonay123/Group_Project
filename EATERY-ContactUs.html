@@ -11,43 +11,100 @@
 		Continuous Assessment 3 for Web Design & Client Side Scripting 
 		-->
     	<title>CONTACT-US</title>
-    	<!-- bootstrap -->
+		<!-- font -->
+    	<link rel="preconnect" href="https://fonts.gstatic.com">
+  		<link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  		<link rel="stylesheet" href="https://use.typekit.net/vfh4whz.css">
+		<!-- bootstrap -->
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!-- custom CSS file -->
-    	<link rel="stylesheet" href="Default.css">
+    	<link rel="stylesheet" href="EATERYJF.css">
 	</head>
 
 	<body>
-		<div class="Container"> <!-- main container class-->
-      		<div class="upperContainer" > <!-- container class for each form input  -->
-       			<h1>CONTACT US<h1> 
-        		<div class="linkWrapper">
-          			<!-- TODO add links other pages-->
-          			<a href="https://www.w3schools.com/html/html_links.asp" class="btn btn-default">COLLECTION</a>  
+		<!-- header -->
+		<header class="header_contact">
+			<!-- navbar -->
+			<nav class="navbar navbar-expand-lg fixed-top nav-menu">
+				<a href="#" class="navbar-brand nav-menu__a"><span>EATERY</span></a>
+				<button class="navbar-toggler nav-button btn-success nav-menu__btn" type="button" data-toggle="collapse" data-target="#myNavbar">
+				  	<div class="bg-light nav-menu__button__line-1"></div>
+				  	<div class="bg-light nav-menu__button__line-2"></div>
+				  	<div class="bg-light nav-menu__button__line-3"></div>
+				</button>
+				<div class="collapse navbar-collapse nav-menu__coll" id="myNavbar">
+				  	<ul class="navbar-nav items" id="all-items">
+						<li class="nav-item items__li">
+					  		<a href="#" class="nav-link mr-5 items__li__menu-item">HOME</a>
+						</li>
+						<li class="nav-item items__li">
+							<a href="#" class="nav-link mr-5 items__li__menu-item">MENU</a>
+						</li>
+						<li class="nav-item items__li">
+							<a href="#" class="nav-link mr-5 items__li__menu-item">ORDER NOW</a>
+						</li>
+						<li class="nav-item items__li--contact">
+							<a href="#" class="nav-link items__li__menu-item">CONTACT</a>
+						</li>
+						<li class="nav-item items_li--icons">
+							<ul class="items__li__icons">
+								<li class="items__li__icons__li">
+									<a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fas fa-user"></i></a>
+								</li>
+								<li class="nav-item items__li">
+									<a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="nav-item items__li">
+									<a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="nav-item items__li">
+									<a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
+						</li>
+				  	</ul>
 				</div>
-				<div class="linkWrapper">
-					  <!-- TODO add links other pages-->
-          			<a href="https://www.w3schools.com/html/html_links.asp" class="btn btn-default">DELIVERY</a> 
-        		</div>
-      		</div>
-      		<div class="middleContainer">
-				<div class="formWrap">
+			</nav>
+			<!-- end of navbar -->
+			<!-- banner-->
+			<div class="banner contact">
+				<div class="container-fluid -banner"> <!-- main container class-->
+					<div class="row">
+						<div class="col-12 col-sm-12">
+							<div class="header_text_wrapper_menu">
+								<h1 class="banner_text_menu_h1">MENU</h1>
+								<div>
+									<!-- TODO add links other pages-->
+									<a href="#link" class="btn btn-info ml-5" id="collection" role="button">COLLECTION</a> -->
+									<!-- TODO add links other pages-->
+									<a href="#link" class="btn btn-info ml-5" id="delivery" role="button">DELIVERY</a>
+								</div>	
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>	
+		</header>
+		<section class="section_contact">
+			<div class="container"> <!-- main contact us class-->
+				<div class="feedbackwrap">
 					<form action="/contact" class="row g-3">
 						<div class="col-md-6">
-							<label for="inputFirstName" class="form-label">Firt Name</label>
-						  	<input type="text" class="form-control" id="inputFirstName" placeholder="Your First Name">
+							<label for="inputFirstName" class="form-label">First Name</label>
+							<input type="text" class="form-control" id="inputFirstName" placeholder="Your First Name">
 						</div>
 						<div class="col-md-6">
-						  	<label for="inputLastName" class="form-label">Last Name</label>
-						 	<input type="text" class="form-control" id="inputLastName" placeholder="Your Last Name">
+							<label for="inputLastName" class="form-label">Last Name</label>
+							<input type="text" class="form-control" id="inputLastName" placeholder="Your Last Name">
 						</div>
 						<div class="col-md-6">
 							<label for="inputEmail" class="form-label">Email Address</label>
 							<input type="email" class="form-control" id="inputEmail" placeholder="You@example.com">
 						</div>
 						<div class="col-md-6">
-						  <label for="inputNumber" class="form-label">Phone Number</label>
-						  <input type="text" class="form-control" id="inputNumber" placeholder="Your Number">
+						<label for="inputNumber" class="form-label">Phone Number</label>
+						<input type="text" class="form-control" id="inputNumber" placeholder="Your Number">
 						</div>
 						<div class="col-md-12">
 							<label for="message" class="form-label">Message</label>
@@ -58,7 +115,9 @@
 						</div>
 					</form>
 				</div>
-				<div class="contactWrap">
+			</div>
+			<div class="container">
+				<div class="contactwrap">
 					<p><Strong>Contact</Strong><br>
 					National College of Ireland <br>
 					IFSC <br>
@@ -69,10 +128,61 @@
 					Email: info@eatery.ie <br>
 					</p>
 				</div>
-      		</div>
-			<div class="lowerContainer">
 			</div>
-		</div>
+		</section>
+		<section class="location">
+				<div class=" ">	
+					<a class="btn btn-disabled ml-5" id="locationbutton" role="button">EATERY</a> -->
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container-fluid -footer">
+			  	<div class="row py-3 footer__row">
+					<div class="col-lg-2 col-md-6 footer__row__col">
+				  		<h1 class="footer__row__col__h1">Eatery</h1>
+				  		<h5 class="footer__row__col__h5">sitemap</h5>
+				  		<div class="footer__row__col__p">
+							<p>Home</p>
+							<p>Menu</p>
+							<p>Order Now</p>
+							<p>Contact</p>
+				  		</div>
+					</div>
+					<div class="footer__row__col--second col-lg-2 col-md-6">
+				  		<h5 class="footer__row__col__h5--mod">Follow us</h5>
+				  		<div class="footer__row__col__p--second">
+							<div class="item"><i class="fab fa-facebook-f"></i><p>Facebook</p></div>
+							<div class="item"><i class="fab fa-twitter"></i><p>Twitter</p></div>
+							<div class="item"><i class="fab fa-instagram"></i><p>Instagram</p></div>
+				  		</div>
+					</div>
+					<div class="col-lg-2 col-md-6 footer__row__col--second">
+				  		<h5 class="footer__row__col__h5--mod">Contact</h5>
+				  		<div class="footer__row__col__p">
+							<p>IFSC, Dublin, Ireland</p>
+							<p>+353 165 678 903</p>
+							<p>info@dublineatery.com</p>
+				  		</div>
+					</div>
+					<div class="col-lg-6 col-md-6 footer__row__card">
+						<h1 class="footer__row__card__h1">Subscribe to our newsletter</h1>
+						<h5 class="footer__row__card__h5">Sign up for the latest news, events and special offers.</h5>
+						<div class="footer__row__card--contact">
+							<div class="footer__row__card__contact-1">
+								<label for="email">Email Address</label>
+								<input type="email" id="email" class="footer__row__card__contact__email" placeholder="you@example.com">
+							</div>
+							<div class="footer__row__card__contact-2">
+								<label for="email">Email Address</label>
+								<input type="email" id="email" class="footer__row__card__contact__email" placeholder="you@example.com">
+							</div>
+							<button>Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 			  <!-- Script loaded at end to ensure page is loaded before triggering script -->
 	
     	<!-- Optional JavaScript -->
