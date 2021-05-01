@@ -17988,3 +17988,56 @@ function reArrangeFooter(screenSize){
 var sizeCheck = window.matchMedia("(max-width: 1350px)");
 reArrangeFooter(sizeCheck);
 sizeCheck.addListener(reArrangeFooter);
+
+
+/** Username and Password Validation */
+const form = document.getElementById('form');
+const username = document.getElementById('email');
+const password = document.getElementById('password');
+
+//show input element error message
+function displayError(element, message){
+  const small = element.nextElementSibling;
+  element.classList.remove('success');
+  element.classList.add('error');
+  small.innerText = message;
+  small.style.visibility = "visible";
+}
+
+//show input element success border color
+function displaySuccess(element) {
+  const small = element.nextElementSibling;
+  element.classList.remove('error')
+  element.classList.add('success');
+  small.style.visibility = "hidden";
+}
+
+// check password length, password must be 9 characters in length
+function checkPasswordLength(event, password, length) {
+  if(password.value.length < length) {
+    displayError(password, "Password must be at least 9 characters in length");
+    //prevent form from submitting
+    event.preventDefault();
+  } else {
+    displaySuccess(password);
+  }
+}
+
+
+//form event listener
+form.addEventListener('submit', function(event){
+  //prevent form from submitting
+  event.preventDefault();
+
+  if(username.value.trim() === ''){
+    displayError(username, 'Email must be provided');
+  } else {
+    displaySuccess(username)
+  }
+
+  if(password.value.trim() === ''){
+    displayError(password, 'Password must be provided');
+  } else {
+    checkPasswordLength(event, password, 9);
+  } 
+});
