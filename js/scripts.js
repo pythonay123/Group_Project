@@ -17992,8 +17992,6 @@ sizeCheck.addListener(reArrangeFooter);
 
 /** Username and Password Validation */
 const form = document.getElementById('form');
-const username = document.getElementById('email');
-const password = document.getElementById('password');
 
 //show input element error message
 function displayError(element, message){
@@ -18028,6 +18026,8 @@ function checkPasswordLength(event, password, length) {
 form.addEventListener('submit', function(event){
   //prevent form from submitting
   event.preventDefault();
+  const username = document.getElementById('email');
+  const password = document.getElementById('password');
 
   if(username.value.trim() === ''){
     displayError(username, 'Email must be provided');
