@@ -18021,9 +18021,9 @@ function checkPasswordLength(event, password, length) {
   }
 }
 
-
-//form event listener
-form.addEventListener('submit', function(event){
+if(form){
+  //form event listener
+  form.addEventListener('submit', function(event){
   //prevent form from submitting
   event.preventDefault();
   const username = document.getElementById('email');
@@ -18041,3 +18041,4 @@ form.addEventListener('submit', function(event){
     checkPasswordLength(event, password, 9);
   } 
 });
+}
