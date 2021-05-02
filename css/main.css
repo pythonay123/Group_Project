@@ -11751,9 +11751,17 @@ body {
     .items__li__icons {
       display: none; } }
 
-header {
+#order {
   height: 45rem;
   background: url("../img/banner-image.jpg") no-repeat center center/cover; }
+
+#menu {
+  height: 45rem;
+  background: url("../img/jean-claude-attipoe-QD9A1O2reYY-unsplash.jpg") no-repeat center center/cover; }
+
+#contact {
+  height: 45rem;
+  background: url("../img/edward-howell-R8HoXig87p8-unsplash.jpg") no-repeat center center/cover; }
 
 .banner-text {
   position: absolute;
