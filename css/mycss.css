@@ -167,17 +167,20 @@ body {
   justify-content: center;
   position: absolute;
   top: 30%;
-  left: 50%;
-  transform: translate(-50%, -30%); }
+  left: 45%;
+  transform: translate(-45%, -30%); }
+  @media only screen and (max-width: 500px) {
+    .banner-text {
+      top: 30%;
+      left: 23%;
+      transform: translate(-23%, -30%); } }
   .banner-text__h1 {
     font-family: continuo, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 150px;
     text-transform: uppercase;
-    color: #FFFFFF;
-    padding-left: 5rem;
-    padding-right: 10rem; }
+    color: #FFFFFF; }
     @media only screen and (max-width: 992px) {
       .banner-text__h1 {
         font-size: 100px; } }
@@ -186,30 +189,27 @@ body {
         font-size: 80px; } }
     @media only screen and (max-width: 500px) {
       .banner-text__h1 {
-        font-size: 50px; } }
+        font-size: 50px;
+        padding-left: 3.5rem; } }
   .banner-text__btn {
     text-transform: uppercase;
     font-family: basic-sans, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 27px;
-    padding: 0.7rem 4.5rem;
     background-color: #FAAE2B;
     color: #00473E;
     border: 2px solid white;
     border-radius: 10px; }
     @media only screen and (max-width: 992px) {
       .banner-text__btn {
-        font-size: 20px;
-        padding: 0.5rem 3rem; } }
+        font-size: 20px; } }
     @media only screen and (max-width: 620px) {
       .banner-text__btn {
-        font-size: 17px;
-        padding: 0.5rem 1.3rem; } }
+        font-size: 17px; } }
     @media only screen and (max-width: 500px) {
       .banner-text__btn {
-        font-size: 13px;
-        padding: 0.5rem 0.6rem; } }
+        font-size: 13px; } }
 
 @media only screen and (max-width: 500px) {
   .hero-image {
@@ -445,9 +445,9 @@ a:link {
       padding-right: 10px; }
       .tbody-2__row__quantity .add:focus {
         outline: none; }
-  .tbody-2__row--total-price #price {
+  .tbody-2__row--total-price .price {
     font-size: 17px; }
-  .tbody-2__row--total-price #times {
+  .tbody-2__row--total-price .times {
     font-size: 28px; }
 
 .table-container {
