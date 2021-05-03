@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/37b1a1f7b3.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/vfh4whz.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <title>Checkout</title>
+</head>
+<body>
+  <!-- header -->
+  <header id="order">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top nav-menu">
+      <a href="#" class="navbar-brand nav-menu__a"><span>EATERY</span></a>
+      <button class="navbar-toggler nav-button nav-menu__btn" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <div class="bg-light nav-menu__button__line-1"></div>
+        <div class="bg-light nav-menu__button__line-2"></div>
+        <div class="bg-light nav-menu__button__line-3"></div>
+      </button>
+      <div class="collapse navbar-collapse nav-menu__coll" id="myNavbar">
+        <ul class="navbar-nav items" id="all-items">
+          <li class="nav-item items__li">
+            <a href="index.html" class="nav-link mr-5 items__li__menu-item">HOME</a>
+          </li>
+          <li class="nav-item items__li">
+            <a href="menu.html" class="nav-link mr-5 items__li__menu-item">MENU</a>
+          </li>
+          <li class="nav-item items__li items__li--order"> 
+            <a href="ordernow.html" class="nav-link mr-5 items__li__menu-item">ORDER NOW</a>
+          </li>
+          <li class="nav-item items__li--contact">
+            <a href="contact.html" class="nav-link items__li__menu-item">CONTACT</a>
+          </li>
+          <li class="nav-item items_li--icons">
+            <ul class="items__li__icons">
+              <li class="items__li__icons__li">
+                <a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fas fa-user"></i></a>
+              </li>
+              <li class="nav-item items__li">
+                <a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item items__li">
+                <a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item items__li">
+                <a href="#" class="nav-link mr-3 items__li__icons__li__a"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- banner -->
+    <div class="banner-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12">
+            <h1 class="banner-text__h1">Checkout</h1>
+            <button class="banner-text__btn ml-5">collection</button>
+            <button class="banner-text__btn ml-2 ml-sm-5">delivery</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of banner -->
+  </header>
+  <!-- end of header -->
+  
+  <!-- login form -->
+  <section class="login-form">
+    <div class="container">
+      <div class="row login-form__row">
+        <div class="col login-form__row--col">
+          <div class="login-form__row__col"> 
+            <h1 class="login-form__row__col__h1">log in to order</h1>
+            <h3 class="login-form__row__col__h3">or register now</h3>
+
+            <form id="form" class="form mt-3">
+              <label for="email" class="login-form__row__col__label">Email address</label>
+              <input type="email" id="email" class="py-2 login-form__row__col__input" placeholder="Email Address">
+              <small class="error-1">Error message</small>
+              <label for="password" class="login-form__row__col__label">Password</label>
+              <input type="password" id="password" class="py-2 login-form__row__col__input" placeholder="Password">
+              <small class="error-2">Error message</small>
+              <div class="login-form__row__col__remember">
+                <input type="checkbox"><span class="ml-2">Remember me</span>
+              </div>
+              <button>Sign In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of login form -->
+
+  <!-- Order details  -->
+  <section class="order">
+    <div class="container">
+      <div class="row order__row">
+
+        <!-- First Column -->
+        <div class="col-md-12 col-lg-6 order__row__first pr-5">
+          <h1 class="order__row__first__h1">Your Order Details</h1>
+          <!-- Starter Menu table -->
+          <h3 class="order__row__first__h3">Starters</h3>
+          <table class="table order__row__first__table">
+            <tbody class="tbody">
+              <tr>
+                <td><input type="checkbox" class="tbody__input">Caesar salad</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="tbody__input">Super bowl</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="tbody__input">Sriracha</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Main Courses table -->
+          <h3 class="order__row__first__h3--red">Main Courses - All 28</h3>
+          <table class="table order__row__first__table">
+            <tbody class="tbody">
+              <tr>
+                <td><input type="checkbox" class="tbody__input">Smash burger</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="tbody__input">chicken burger</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="tbody__input">cheese steak sambo</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- The extra good stuff table -->
+          <h3 class="order__row__first__h3--red">The etra good stuff</h3>
+          <table class="table order__row__first__table">
+            <tbody class="tbody">
+              <tr>
+                <td><input type="checkbox" class="tbody__input">creamy cheesecake</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="tbody__input">Molten chocolate brownie</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="tbody__input">Ice Cream</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Second column -->
+        <div class="col-md-12 col-lg-6 order__row__second pl-2 pl-sm-5">
+          <table class="table mt-5">
+            <thead class="table__head">
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total Price</th>
+              </tr>
+            </thead>
+            <tbody class="tbody-2">
+              <!-- first row -->
+              <tr class="tbody-2__row">
+                <td class="align-middle">
+                  <div class="tbody-2__row__item">
+                    <h4>Starters</h4>
+                    <p>Southern-fried chicken</p>
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <div class="tbody-2__row__quantity">
+                    <button class="subtract" class="disabled">-</button>
+                    <input type="text" class="quantity" value="1">
+                    <button class="add">+</button>
+                  </div>
+                </td>
+                <td class="align-middle tbody-2__row--total-price">
+                  <span id="price">&euro;30.00</span>
+                  <button type="button" class="close" aria-label="Close">
+                    <span id="times" aria-hidden="true">&times;</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- second row -->
+              <tr class="tbody-2__row">
+                <td class="align-middle">
+                  <div class="tbody-2__row__item">
+                    <h4>Mains</h4>
+                    <p>Irish beef burger with bacon</p>
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <div class="tbody-2__row__quantity">
+                    <button class="subtract" class="disabled">-</button>
+                    <input type="text" class="quantity" value="1">
+                    <button class="add">+</button>
+                  </div>
+                </td>
+                <td class="align-middle tbody-2__row--total-price">
+                  <span id="price">&euro;30.00</span>
+                  <button type="button" class="close" aria-label="Close">
+                    <span id="times" aria-hidden="true">&times;</span>
+                  </button>
+                </td>
+              </tr>
+              <!-- third row -->
+              <tr class="tbody-2__row">
+                <td class="align-middle">
+                  <div class="tbody-2__row__item">
+                    <h4>The Extra Good stuff</h4>
+                    <p>Butterscotch fresh cream</p>
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <div class="tbody-2__row__quantity">
+                    <button class="subtract" class="disabled">-</button>
+                    <input type="text" class="quantity" value="1">
+                    <button class="add">+</button>
+                  </div>
+                </td>
+                <td class="align-middle tbody-2__row--total-price">
+                  <span id="price">&euro;30.00</span>
+                  <button type="button" class="close" aria-label="Close">
+                    <span id="times" aria-hidden="true">&times;</span>
+                  </button>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+
+          <!-- subtotal divider -->
+          <hr id="line-break"/>
+
+          <div class="table-container">
+            <table class="table subtotal">
+              <tbody>
+                <tr>
+                  <td class="subtotal__td__th" scope="row">Subtotal</td>
+                  <td class="subtotal__td">&euro;149.96</td>
+                </tr>
+                <tr>
+                  <td class="subtotal__td__th" scope="row">Delivery Fee</td>
+                  <td class="subtotal__td">&euro;2.99</td>
+                </tr>
+                <tr>
+                  <td class="subtotal__td__th" scope="row">Total</td>
+                  <td class="subtotal__td">&euro;169.96</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><button>Check Out</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- end of second column -->
+      </div>
+    </div>
+  </section>
+  <!-- end of order details -->
+
+  <footer class="footer">
+    <div class="footer-cont container-fluid">
+      <div class="row py-3 footer__row">
+        <div class="col-xl-2 col-lg-4 col-md-12 footer__row__col">
+          <h1 class="footer__row__col__h1">Eatery</h1>
+          <h5 class="footer__row__col__h5">sitemap</h5>
+          <div class="footer__row__col__p">
+            <p>Home</p>
+            <p>Menu</p>
+            <p>Order Now</p>
+            <p>Contact</p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 footer__row__col--second follow">
+          <h5 class="footer__row__col__h5--mod">Follow us</h5>
+          <div class="footer__row__col__p--second">
+            <div class="item"><i class="fab fa-facebook-f"></i><p>Facebook</p></div>
+            <div class="item"><i class="fab fa-twitter"></i><p>Twitter</p></div>
+            <div class="item"><i class="fab fa-instagram"></i><p>Instagram</p></div>
+        </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 contact footer__row__col--second">
+          <h5 class="footer__row__col__h5--mod">Contact</h5>
+          <div class="footer__row__col__p">
+            <p>IFSC, Dublin, Ireland</p>
+            <p>+353 165 678 903</p>
+            <p>info@dublineatery.com</p>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="f-card footer__row__card">
+            <h1 class="footer__row__card__h1">Subscribe to our newsletter</h1>
+            <h5 class="footer__row__card__h5">Sign up for the latest news, events and special offers.</h5>
+            <div class="footer__row__card--contact mt-xl-4">
+              <div class="footer__row__card__contact-1">
+                <label for="email-2">Email Address</label>
+                <input type="email" id="email-2" class="footer__row__card__contact__email" placeholder="you@example.com">
+              </div>
+              <div class="footer__row__card__contact-2">
+                <label for="name">Full Name</label>
+                <input type="name" id="name" class="footer__row__card__contact__name" placeholder="Full Name">
+              </div>
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footer__row-2">
+        <div class="row2_col col-12">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+ <!-- custom javascript -->
+  <script src="js/default.js" charset="utf-8"></script>
+</body>
+</html>

@@ -11608,7 +11608,7 @@ readers do not read off random characters that represent icons */
 .form button, .table-container button {
   font-family: calibri, sans-serif;
   margin-top: 18px;
-  color: #FFFFFF;
+  color: white;
   background-color: #FFA8BA;
   padding: 5px 13px;
   border-color: #FFA8BA;
@@ -11617,7 +11617,7 @@ readers do not read off random characters that represent icons */
 .footer__row__card button {
   font-family: calibri, sans-serif;
   margin-top: 31px;
-  color: #FFFFFF;
+  color: white;
   background-color: #00473E;
   padding: 0px 20px;
   height: 2.5rem;
@@ -11735,7 +11735,7 @@ body {
   padding-top: 6px;
   list-style: none; }
   .items__li__icons__li__a {
-    color: #FFFFFF; }
+    color: white; }
     @media only screen and (max-width: 1814px) {
       .items__li__icons__li__a {
         font-size: 16px; } }
@@ -11764,6 +11764,8 @@ body {
   background: url("../img/edward-howell-R8HoXig87p8-unsplash.jpg") no-repeat center center/cover; }
 
 .banner-text {
+  text-align: center;
+  justify-content: center;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -11774,7 +11776,9 @@ body {
     font-style: normal;
     font-size: 150px;
     text-transform: uppercase;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    padding-left: 5rem;
+    padding-right: 10rem; }
     @media only screen and (max-width: 992px) {
       .banner-text__h1 {
         font-size: 100px; } }
@@ -11793,7 +11797,7 @@ body {
     padding: 0.7rem 4.5rem;
     background-color: #FAAE2B;
     color: #00473E;
-    border: 2px solid #FFFFFF;
+    border: 2px solid white;
     border-radius: 10px; }
     @media only screen and (max-width: 992px) {
       .banner-text__btn {
@@ -11807,6 +11811,51 @@ body {
       .banner-text__btn {
         font-size: 13px;
         padding: 0.5rem 0.6rem; } }
+
+@media only screen and (max-width: 500px) {
+  .hero-image {
+    height: 600px; } }
+
+.hero-text {
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.hero-h1 {
+  font-family: 'continuo', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  color: white; }
+  @media only screen and (max-width: 500px) {
+    .hero-h1 {
+      font-size: 50px; } }
+
+a {
+  color: white; }
+
+a:link {
+  color: white;
+  text-decoration: none; }
+
+.btn:hover {
+  background-color: #475D5B; }
+
+.btn-primary {
+  background-color: #FAAE2B;
+  border-color: white;
+  text-decoration: none; }
+
+.btn-outline-secondary {
+  background-color: #FAAE2B;
+  border-color: white;
+  color: white; }
 
 .login-form {
   position: absolute;
@@ -11862,7 +11911,7 @@ body {
   align-items: flex-start;
   border: 1px solid rgba(71, 93, 91, 0.2);
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: white;
   padding: 10px 20px 30px;
   /* make the actual error message red */ }
   .form label {
@@ -11901,7 +11950,7 @@ body {
 .order {
   margin-top: 36rem; }
   .order__row {
-    background-color: #FFFFFF;
+    background-color: white;
     padding: 2.5rem 5rem;
     border: 1px solid black;
     border-radius: 3.5rem; }
@@ -11963,7 +12012,7 @@ body {
     .tbody-2__row__quantity .subtract {
       width: 35px;
       height: 37px;
-      background-color: #FFFFFF;
+      background-color: white;
       padding: 0;
       border: none;
       background: none;
@@ -11977,7 +12026,7 @@ body {
       height: 37px;
       text-align: center;
       padding-left: 10px;
-      background-color: #FFFFFF;
+      background-color: white;
       padding: 0;
       border: none;
       background: none;
@@ -11988,7 +12037,7 @@ body {
     .tbody-2__row__quantity .add {
       width: 35px;
       height: 37px;
-      background-color: #FFFFFF;
+      background-color: white;
       padding: 0;
       border: none;
       background: none;
@@ -12091,7 +12140,7 @@ body {
             font-size: 15px; } }
     .footer__row__card {
       border: 1px solid #475D5B;
-      background-color: #FFFFFF;
+      background-color: white;
       padding-top: 3rem;
       padding-bottom: 5rem;
       padding-left: 2rem;
@@ -12307,7 +12356,11 @@ body {
 .menu-border {
   border: 1px solid #475D5B;
   padding: 2rem 3rem;
-  color: #475D5B; }
+  color: #475D5B;
+  background-color: white; }
+
+.menu-delivery {
+  margin-left: 4%; }
 
 .form_cont-1 {
   display: grid;
@@ -12504,11 +12557,11 @@ body {
   .contact-form__row__address {
     display: flex;
     flex-direction: column;
-    border: 1px solid #FFFFFF;
+    border: 1px solid white;
     width: 50%;
     border-radius: 7px;
     padding: 1rem 2rem;
-    background-color: #FFFFFF;
+    background-color: white;
     color: #475D5B; }
     @media only screen and (max-width: 1200px) {
       .contact-form__row__address {
